@@ -84,16 +84,6 @@ class Game(Thread):
         canvas.create_text(375, 125, text=str(newQuote["content"]), font=("Poppins", 12), width=600, tags="quote")
         canvas.create_window(375, 225, window=playerInput, width=500, tags="inputBox")
         canvas.pack()
-        # print("Your quote is: " + "\n" + newQuote["content"])
-
-        # userInput = input("")
-
-        # if(userInput == newQuote["content"]):
-        #     global gameEnd
-        #     gameEnd = 1
-        #     calculate(globalTime, newQuote["length"])
-        # else:
-        #     print("You did it wrong, lmao. Restart the program, peasant.")
 
 def calculate(userTime, quoteLength):
     timeInMinutes = userTime / 60
@@ -104,8 +94,6 @@ def calculate(userTime, quoteLength):
 
     canvas.create_text(375, 125, text="Your result is " + str(wpm) + " WPM", font=("Poppins", 12))
 
-    # print("Your WPM result is: " + str(math.ceil(wpm)))
-
 def startGame():
     game = Game()
     timer = Timer()
@@ -114,9 +102,6 @@ def startGame():
     game.start()
     timer.start()
     keyCheck.start()
-
-def test():
-    print("1")
 
 # Widgets
 canvas = tk.Canvas(window, width=750, height=450)

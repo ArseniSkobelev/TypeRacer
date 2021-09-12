@@ -23,4 +23,5 @@ It then decides whether you've entered the quote correctly and acts accordingly.
 >   * Restart button  
 >   * GUI design  
 >   * Choice of quote length  
+>   * Fix the mainloop bug
 > 
